@@ -134,20 +134,24 @@ body {
 .gallery_container__left h2 {
     display: inline-block;
     vertical-align: middle;
-    float: left;
     font-style: 30px;
     line-height: 40px;
     font-weight: 300;
     color: #000000;
     margin: 0;
     padding-right: 65px;
+    width: 25%;
 }
 
 .gallery_container__left p {
+    display: inline-block;
+    vertical-align: middle;
+    float: right;
     margin: 0;
     font-size: 13px;
     line-height: 20px;
     font-weight: 300;
+    width: 75%;
 }
 
 .gallery_container__left-items {
@@ -157,6 +161,10 @@ body {
 .gallery_container__right {
     z-index: 99;
     margin-top: -100px;
+}
+
+.gallery_container__right img {
+    width: 100%;
 }
 
 .banner {
