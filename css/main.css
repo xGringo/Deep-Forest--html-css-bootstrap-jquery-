@@ -24,23 +24,6 @@ html.js .loader_inner {
 	position: absolute;
 }
 
-body {
-	font-family: sans-serif;
-	font-size: 16px;
-	min-width: 320px;
-	position: relative;
-	line-height: 1.6;
-	font-family: 'Roboto', Arial, sans-serif;
-	overflow-x: hidden;
-}
-.hidden {
-	display: none;
-}
-
-/** {
-	outline: 1px solid red;
-}*/
-
 /*=============================== mosaic flow ====================================*/
 .mosaicflow__column { 
     float:left; 
@@ -51,7 +34,6 @@ body {
     width:100%; 
     height:auto; 
 }
-
 
 /*===================================================================================*/
 
@@ -127,6 +109,10 @@ body {
     padding-bottom: 60px;
 }
 
+.gallery_title {
+    padding: 0;
+}
+
 .gallery_container__left {
     padding-right: 20px;
 }
@@ -134,28 +120,26 @@ body {
 .gallery_container__left h2 {
     display: inline-block;
     vertical-align: middle;
-    font-style: 30px;
+    font-size: 30px;
     line-height: 40px;
     font-weight: 300;
     color: #000000;
     margin: 0;
     padding-right: 65px;
-    width: 25%;
 }
 
 .gallery_container__left p {
     display: inline-block;
     vertical-align: middle;
-    float: right;
     margin: 0;
     font-size: 13px;
     line-height: 20px;
     font-weight: 300;
-    width: 75%;
 }
 
 .gallery_container__left-items {
     margin-top: 55px;
+    padding: 0;
 }
 
 .gallery_container__right {
@@ -204,8 +188,6 @@ body {
     background: -moz-linear-gradient(top,  #f2f6f8 0%, #d8e1e7 50%, #b5c6d0 51%, #e0eff9 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top,  #f2f6f8 0%,#d8e1e7 50%,#b5c6d0 51%,#e0eff9 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom,  #f2f6f8 0%,#d8e1e7 50%,#b5c6d0 51%,#e0eff9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', endColorstr='#e0eff9',GradientType=0 ); /* IE6-9 */
-
 }
 
 .banner_title__btn:hover,
@@ -283,7 +265,7 @@ body {
     text-align: center;
     background: #3f3f47 url(../img/footer_bg.jpg) no-repeat;
     padding-top: 110px;
-    padding-bottom: 100px;
+    padding-bottom: 90px;
 }
 
 .footer_title p {
@@ -298,6 +280,18 @@ body {
 
 .footer_video {
     margin-top: 85px;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+
+.footer_video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .footer_logo {
